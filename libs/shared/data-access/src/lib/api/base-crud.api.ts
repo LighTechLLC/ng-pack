@@ -1,7 +1,7 @@
 import {HttpClient} from '@angular/common/http';
 import {inject, Injectable} from '@angular/core';
-import {ENVIRONMENT} from '@nx-angular-monorepo/shared/environments';
-import {QueryParameters} from '@nx-angular-monorepo/shared/model';
+import {ENVIRONMENT} from '@ng-pack/shared/environments';
+import {QueryParameters} from '@ng-pack/shared/model';
 import {Observable} from 'rxjs';
 
 @Injectable()

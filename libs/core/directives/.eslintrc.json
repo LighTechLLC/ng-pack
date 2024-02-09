@@ -11,7 +11,7 @@
                     "error",
                     {
                         "type": "element",
-                        "prefix": "nx-angular-monorepo",
+                        "prefix": "ng-pack",
                         "style": "kebab-case"
                     }
                 ]
