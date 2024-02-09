@@ -1,11 +1,27 @@
 {
-    "name": "shared-model",
+    "name": "model",
     "$schema": "../../../node_modules/nx/schemas/project-schema.json",
     "sourceRoot": "libs/shared/model/src",
     "prefix": "ng-pack",
-    "tags": ["scope:shared", "type:model"],
+    "tags": [],
     "projectType": "library",
     "targets": {
+        "build": {
+            "executor": "@nx/angular:package",
+            "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+            "options": {
+                "project": "libs/shared/model/ng-package.json"
+            },
+            "configurations": {
+                "production": {
+                    "tsConfig": "libs/shared/model/tsconfig.lib.prod.json"
+                },
+                "development": {
+                    "tsConfig": "libs/shared/model/tsconfig.lib.json"
+                }
+            },
+            "defaultConfiguration": "production"
+        },
         "test": {
             "executor": "@nx/jest:jest",
             "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
@@ -14,8 +30,7 @@
             }
         },
         "lint": {
-            "executor": "@nx/eslint:lint",
-            "outputs": ["{options.outputFile}"]
+            "executor": "@nx/eslint:lint"
         }
     }
 }

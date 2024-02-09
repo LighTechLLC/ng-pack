@@ -1,11 +1,27 @@
 {
-    "name": "shared-data-access",
+    "name": "data-access",
     "$schema": "../../../node_modules/nx/schemas/project-schema.json",
     "sourceRoot": "libs/shared/data-access/src",
     "prefix": "ng-pack",
-    "tags": ["scope:shared", "type:data-access"],
+    "tags": [],
     "projectType": "library",
     "targets": {
+        "build": {
+            "executor": "@nx/angular:package",
+            "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+            "options": {
+                "project": "libs/shared/data-access/ng-package.json"
+            },
+            "configurations": {
+                "production": {
+                    "tsConfig": "libs/shared/data-access/tsconfig.lib.prod.json"
+                },
+                "development": {
+                    "tsConfig": "libs/shared/data-access/tsconfig.lib.json"
+                }
+            },
+            "defaultConfiguration": "production"
+        },
         "test": {
             "executor": "@nx/jest:jest",
             "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
@@ -14,8 +30,7 @@
             }
         },
         "lint": {
-            "executor": "@nx/eslint:lint",
-            "outputs": ["{options.outputFile}"]
+            "executor": "@nx/eslint:lint"
         }
     }
 }

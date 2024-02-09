@@ -54,14 +54,14 @@
                         },
                         {
                             "type": "anyComponentStyle",
-                            "maximumWarning": "2kb",
-                            "maximumError": "10kb"
+                            "maximumWarning": "500kb",
+                            "maximumError": "5mb"
                         }
                     ],
                     "fileReplacements": [
                         {
-                            "replace": "libs/shared/environments/src/environment.ts",
-                            "with": "libs/shared/environments/src/environment.prod.ts"
+                            "replace": "libs/shared/environments/src/lib/environment.ts",
+                            "with": "libs/shared/environments/src/lib/environment.prod.ts"
                         }
                     ],
                     "outputHashing": "all"

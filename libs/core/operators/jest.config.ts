@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default {
     displayName: 'operators',
     preset: '../../../jest.preset.js',

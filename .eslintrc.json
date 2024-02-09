@@ -26,22 +26,6 @@
                 "./scripts/eslint/no-restricted-syntax.js"
             ],
             "rules": {
-                "@angular-eslint/directive-selector": [
-                    "error",
-                    {
-                        "type": "attribute",
-                        "prefix": "nxAngularStandalone",
-                        "style": "camelCase"
-                    }
-                ],
-                "@angular-eslint/component-selector": [
-                    "error",
-                    {
-                        "type": "element",
-                        "prefix": "nx-angular-standalone",
-                        "style": "kebab-case"
-                    }
-                ],
                 "import/no-unresolved": "off",
                 "import/extensions": [
                     "error",

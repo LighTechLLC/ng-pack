@@ -1,1 +1,1 @@
-export * from './lib/api/base-crud.api';
+export const sharedDataAccess = 'shared-data-access' as const;

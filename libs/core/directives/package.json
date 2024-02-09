@@ -1,0 +1,10 @@
+{
+    "name": "@ng-pack/core/directives",
+    "version": "0.0.1",
+    "sideEffects": false,
+    "dependencies": {},
+    "peerDependencies": {
+        "@angular/common": "^17.1.0",
+        "@angular/core": "^17.1.0"
+    }
+}

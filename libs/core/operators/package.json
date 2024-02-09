@@ -1,0 +1,8 @@
+{
+    "name": "@ng-pack/core/operators",
+    "version": "0.0.1",
+    "sideEffects": false,
+    "peerDependencies": {
+        "rxjs": "~7.8.0"
+    }
+}

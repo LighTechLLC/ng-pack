@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default {
     displayName: 'animations',
     preset: '../../../jest.preset.js',
