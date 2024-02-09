@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default {
     displayName: 'directives',
     preset: '../../../jest.preset.js',

@@ -6,6 +6,22 @@
     "tags": [],
     "projectType": "library",
     "targets": {
+        "build": {
+            "executor": "@nx/angular:package",
+            "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+            "options": {
+                "project": "libs/core/operators/ng-package.json"
+            },
+            "configurations": {
+                "production": {
+                    "tsConfig": "libs/core/operators/tsconfig.lib.prod.json"
+                },
+                "development": {
+                    "tsConfig": "libs/core/operators/tsconfig.lib.json"
+                }
+            },
+            "defaultConfiguration": "production"
+        },
         "test": {
             "executor": "@nx/jest:jest",
             "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
@@ -14,8 +30,7 @@
             }
         },
         "lint": {
-            "executor": "@nx/eslint:lint",
-            "outputs": ["{options.outputFile}"]
+            "executor": "@nx/eslint:lint"
         }
     }
 }

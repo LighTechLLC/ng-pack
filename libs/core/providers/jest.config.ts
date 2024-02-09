@@ -1,5 +1,6 @@
+/* eslint-disable */
 export default {
-    displayName: 'core-providers',
+    displayName: 'providers',
     preset: '../../../jest.preset.js',
     setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
     coverageDirectory: '../../../coverage/libs/core/providers',

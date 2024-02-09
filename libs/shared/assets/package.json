@@ -1,0 +1,7 @@
+{
+    "name": "@ng-pack/shared/assets",
+    "version": "0.0.1",
+    "sideEffects": false,
+    "dependencies": {},
+    "peerDependencies": {}
+}

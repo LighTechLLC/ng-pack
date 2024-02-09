@@ -1,3 +1,3 @@
-export {assertInjector} from './assert-injector';
-export * from './coercion';
-export {injectNavigationEnd} from './navigation-end';
+export {assertInjector} from './lib/assert-injector';
+export * from './lib/coercion';
+export {injectNavigationEnd} from './lib/navigation-end';

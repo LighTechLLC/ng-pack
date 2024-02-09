@@ -1,5 +1,6 @@
+/* eslint-disable */
 export default {
-    displayName: 'shared-styles',
+    displayName: 'styles',
     preset: '../../../jest.preset.js',
     setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
     coverageDirectory: '../../../coverage/libs/shared/styles',
